@@ -342,6 +342,10 @@ a {
     color: #fff;
 }
 
+.card--primary .badge--primary {
+    background: #126de4;
+}
+
 .card--secondary .badge--secondary {
     background: #02cdf1;
 }
@@ -412,4 +416,23 @@ a {
     .plan__description {
         font-size: 1.7rem;
     }
+}
+
+
+
+/*  Media Components    */
+.media {
+    display: flex;
+}
+
+.media__image {
+    margin-top: 1rem;
+}
+
+.media__title {
+    margin-top: 0;
+}
+
+.media__body {
+    margin: 0 2rem;
 }
