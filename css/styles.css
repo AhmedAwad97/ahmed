@@ -1,4 +1,4 @@
-:root{
+:root {
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
     --color-accent: #ff3400;
@@ -8,58 +8,64 @@
     --border-radius: 30px
 }
 
-*, *::after, *::before{
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
 /*  Typography  */
 
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-family: Inter, Arial, Arial, Helvetica, sans-serif;
     color: var(--color-body);
     font-size: 2.4rem;
     line-height: 1.5;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
 }
 
-h1{
+h1 {
     font-size: 7rem;
     font-weight: bold;
 }
 
-h2{
+h2 {
     font-size: 4rem;
 }
 
-h3{
+h3 {
     font-size: 3rem;
 }
 
-p{
+p {
     margin-top: 0;
 }
 
 @media screen and (min-width: 1024px) {
-    body{
+    body {
         font-size: 1.8rem;
     }
 
-    h1{
+    h1 {
         font-size: 8rem;
     }
-    h2{
+
+    h2 {
         font-size: 4rem;
     }
-    h3{
+
+    h3 {
         font-size: 2.4rem;
     }
 }
@@ -67,24 +73,24 @@ p{
 
 
 /*  Links   */
-a{
+a {
     text-decoration: none;
 }
 
-.link-arrow{
+.link-arrow {
     color: var(--color-accent);
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
 }
 
-.link-arrow::after{
+.link-arrow::after {
     content: "-->";
     margin-left: 5px;
     transition: margin 0.15s;
 }
 
-.link-arrow:hover::after{
+.link-arrow:hover::after {
     margin-left: 10px;
 }
 
@@ -99,7 +105,7 @@ a{
 
 /*  Badges  */
 
-.badge{
+.badge {
     border-radius: 20px;
     font-size: 2rem;
     font-weight: 600;
@@ -107,69 +113,71 @@ a{
     white-space: nowrap;
 }
 
-.badge--primary{
+.badge--primary {
     background-color: var(--color-primary);
     color: #fff;
 }
 
-.badge--secondary{
+.badge--secondary {
     background-color: var(--color-secondary);
     color: #fff;
 }
 
-.badge--small{
+.badge--small {
     font-size: 1.6rem;
+    padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
     .badge {
         font-size: 1.5rem;
     }
-    .badge--small{
+
+    .badge--small {
         font-size: 1.2rem;
     }
 }
 
 
 /*  Lists   */
-.list{
+.list {
     list-style: none;
     padding-left: 0;
     color: var(--color-headings);
 }
 
-.list--inline .list__item{
+.list--inline .list__item {
     display: inline-block;
     margin-right: 2rem;
 }
 
-.list--tick{
+.list--tick {
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
 }
 
-.list--tick .list__item{
+.list--tick .list__item {
     padding-left: 0.5rem;
     margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
-    .list--tick .list__item{
+    .list--tick .list__item {
         padding-left: 0;
     }
 }
 
 /*  Icons   */
-.icon{
+.icon {
     width: 40px;
     height: 40px;
 }
 
-.icon--primary{
+.icon--primary {
     fill: var(--color-primary);
 }
 
-.icon-container{
+.icon-container {
     background: #f3f9fa;
     width: 64px;
     height: 64px;
@@ -182,7 +190,7 @@ a{
 
 
 /*  Buttons */
-.btn{
+.btn {
     background-color: transparent;
     border-radius: var(--border-radius);
     border: 0;
@@ -196,61 +204,54 @@ a{
     white-space: nowrap;
 }
 
-.btn-container{
-    background-color: #ffff;
-    margin: 1rem;
-    padding: 2rem;
-}
-
-
-.btn--primary{
+.btn--primary {
     background: var(--color-primary);
     color: #fff;
     word-spacing: 0.5rem;
 }
 
-.btn--primary:hover{
+.btn--primary:hover {
     background: #3a8ffd;
 }
 
 
 
-.btn--secondary{
+.btn--secondary {
     background: var(--color-secondary);
     color: color: #fff;
 }
 
 
-.btn--secondary:hover{
+.btn--secondary:hover {
     background: #00c8eb;
 }
 
-.btn--accent{
+.btn--accent {
     background-color: var(--color-accent);
     color: #fff;
 }
 
-.btn--accent:hover{
+.btn--accent:hover {
     background: #ec3000;
 }
 
-.btn--block{
+.btn--block {
     display: inline-block;
     width: 100%;
 }
 
-.btn--outline{
+.btn--outline {
     background: #fff;
     color: var(--color-headings);
     border: 2px solid var(--color-headings);
 }
 
-.btn--outline:hover{
+.btn--outline:hover {
     background-color: var(--color-headings);
     color: #fff;
 }
 
-.search-icon{
+.search-icon {
     width: 20px;
     height: 20px;
     margin-right: 1rem;
@@ -264,14 +265,14 @@ a{
 }
 
 @media screen and (min-width: 1024px) {
-    .btn{
+    .btn {
         font-size: 1.5rem;
     }
 }
 
 
 /*  Input   */
-.input{
+.input {
     border-radius: var(--border-radius);
     border: 1px solid #ccc;
     color: var(--color-border);
@@ -280,36 +281,135 @@ a{
     padding: 1.5rem 3.5rem;
 }
 
-::placeholder{
+::placeholder {
     color: #cdcbd7;
 }
 
 
-.input-btn{
-    .input{
+.input-btn {
+    .input {
         content: "hello";
     }
 }
 
-.input-group{
+.input-group {
     align-items: center;
     border-radius: var(--border-radius);
     border: 1px solid var(--color-border);
     display: flex;
 }
 
-.input-group .input{
+.input-group .input {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 1rem;
 }
 
-.input-group .btn{
+.input-group .btn {
     margin: 4px;
 }
 
 @media screen and (min-width: 1024px) {
-    .input{
+    .input {
         font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+/*  Cards    */
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+}
+
+.card__header,
+.card__body {
+    padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.card--secondary .card__header {
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+.card--secondary .badge--secondary {
+    background: #02cdf1;
+}
+
+
+@media screen and (min-width: 1024px) {}
+
+
+
+
+/*  Pland   */
+.plan__name {
+    color: #fff;
+    font-size: 2.4rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.plan__price {
+    font-size: 6rem;
+}
+
+.plan__billing-cycle {
+    font-size: 2.4rem;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-right: 1rem;
+}
+
+.plan__description {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.plan .list__item {
+    margin-bottom: 2rem;
+}
+
+.plan--popular .card__header {
+    position: relative;
+}
+
+.plan--popular .card__header::before {
+    content: url("../images/popular.svg");
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    right: 5%;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .plan__name {
+        font-size: 1.4rem;
+    }
+
+    .plan__price {
+        font-size: 5rem;
+    }
+
+    .plan__billing-cycle {
+        font-size: 1.6rem;
+    }
+
+    .plan__description {
+        font-size: 1.7rem;
     }
 }
