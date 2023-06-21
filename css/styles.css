@@ -268,6 +268,11 @@ a {
     color: #fff;
 }
 
+.btn--streched{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
 .search-icon {
     width: 20px;
     height: 20px;
@@ -576,5 +581,62 @@ a {
     .testimonial .quote {
         margin-left: 6rem;
         margin-right: 0;
+    }
+}
+
+
+/*  callout */
+.callout{
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout--primary{
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.callout__heading{
+    color: #fff;
+    margin-top: 0;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.callout__content{
+    text-align: center;
+}
+
+.callout__content p{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.callout__btn{
+    font-size: 1.771rem;
+    justify-self: center;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .callout .grid--1x2{
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout__heading{
+        font-size: 4rem;
+    }
+    .callout__content {
+        text-align: left;
+    }
+    .callout__content p{
+        font-size: 2rem;
+    }
+
+    .callout__btn{
+        font-size: 1.5rem;
+        justify-self: start;
+        margin: 0 2rem;
     }
 }
