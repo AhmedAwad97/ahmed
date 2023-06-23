@@ -893,7 +893,7 @@ a {
     margin: 0 auto;
 }
 
-@media screen and (min-width:720px){
+@media screen and (min-width:768px){
     .block-domain__prices{
         /*grid-template-columns: repeat(6, 1fr);*/
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -926,3 +926,32 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+/*  Feature Block   */
+.feature{
+    gap: 4rem 2rem;
+    justify-self: end;
+    margin: 12rem 0;
+}
+
+.feature__heading{
+    margin: 1rem 0;
+}
+
+.feature__img{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
+    }
+}
