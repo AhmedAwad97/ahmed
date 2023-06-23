@@ -318,6 +318,7 @@ a {
     border-radius: var(--border-radius);
     border: 1px solid var(--color-border);
     display: flex;
+    position: relative;
 }
 
 .input-group .input {
@@ -328,6 +329,8 @@ a {
 
 .input-group .btn {
     margin: 4px;
+    position: relative;
+    right: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -377,7 +380,25 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  Pland   */
+.plan{
+    transition: transform .5s ease-out;
+}
+
 .plan__name {
     color: #fff;
     font-size: 2.4rem;
@@ -407,6 +428,12 @@ a {
     margin-bottom: 2rem;
 }
 
+.plan--popular{
+    transform: scale(1.1);
+}
+
+
+
 .plan--popular .card__header {
     position: relative;
 }
@@ -418,8 +445,15 @@ a {
     position: absolute;
     top: -6px;
     right: 5%;
-
 }
+
+.plan:hover {
+    transform: scale(1.05);
+}
+.plan--popular:hover {
+    transform: scale(1.15);
+}
+
 
 @media screen and (min-width: 1024px) {
     .plan__name {
@@ -438,6 +472,19 @@ a {
         font-size: 1.7rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -535,7 +582,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
     .grid--1x3 {
-        grid-template-columns: repeat(2, 1fr)/*1fr 1fr*/;
+        grid-template-columns: repeat(3, 1fr)/*1fr 1fr*/;
         grid-template-rows: repeat(1, 1fr)/*1fr 1fr*/;
     }
 }
@@ -830,6 +877,11 @@ a {
     max-width: 670px;
 }
 
+.block-domain .btn{
+    position: absolute;
+    right: 0;
+}
+
 .block-domain__prices{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -848,3 +900,29 @@ a {
         grid-template-rows: none;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Plans Block */
+
+.plans-block .grid {
+    gap: 8rem 4rem;
+}
+
+.plans-block .card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+
