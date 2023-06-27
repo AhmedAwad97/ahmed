@@ -766,6 +766,10 @@ a {
   margin: 0 auto;
 }
 
+.block-domain__prices li:hover{
+  scale: 1.1;
+}
+
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
